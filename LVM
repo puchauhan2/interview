@@ -33,6 +33,8 @@
 
 4) extend lvm 
 	# lvextend -L +4G /dev/vg1/lv1
+		OR
+	# lvextend -l +50%FREE -r /dev/vg1/lv1
 
 5) resize 
 	#resize /dev/vg1/lv1
