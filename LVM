@@ -1,0 +1,39 @@
+1) pvdisplay
+2) create physical volume - #fdisk /dev/sdb
+   n
+   set primary partitioon
+   Press t to select Label ,for lvm 8e
+   finally press w to commit all chnages
+
+3) create physical lvm volume
+	pvcreate /dev/sdb1
+
+3) create volume group 
+	# vgdisplay - to show volume group
+	# vgcreate vg1 /dev/sdb1
+
+4)  creat logical volume
+	# lvdisplay -- to show logical volume
+	# lvcreate -L +2G -n lv1 vg1
+	*lv path will be /dev/vg1/lv1 and remember this location
+
+5) Format partition 
+	# mkfs.ext4 /dev/vg1/lv1 
+	* now it is ready to mount to DIR
+
+------- to extend  LVM volume usign /dev/sdc of 4 gb----
+
+1) repeat Step 2 from above 
+
+2) create physical lvm volume 
+	#pvcreate /dev/sdc1
+	
+3) extend existing volume group 
+	#vgextend /vg1 /dev/sdc1
+
+4) extend lvm 
+	# lvextend -L +4G /dev/vg1/lv1
+
+5) resize 
+	#resize /dev/vg1/lv1
+
