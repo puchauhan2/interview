@@ -21,7 +21,7 @@
 	# mkfs.ext4 /dev/vg1/lv1 
 	* now it is ready to mount to DIR
 
-------- to extend  LVM volume usign /dev/sdc of 4 gb----
+------- to extend  LVM volume usign /dev/sdc of 4 gb---- 
 
 1) repeat Step 2 from above 
 
@@ -36,4 +36,7 @@
 
 5) resize 
 	#resize /dev/vg1/lv1
+
+-----------------------------------
+command : psv,lvs.vgs
 
