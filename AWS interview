@@ -1,0 +1,6 @@
+Security group -- Eni level
+NACL		-- Subnet level
+
+
+CI - commit to repo (GIt,SVN) -> build (Jenkins) -> test (Selenium),functional testing,unit testing,integral testing 
+CD - release process (buid) -> UAT ->> Prod
