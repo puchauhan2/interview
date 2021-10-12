@@ -2,5 +2,7 @@ Security group -- Eni level
 NACL		-- Subnet level
 
 
-CI - commit to repo (GIt,SVN) -> build (Jenkins) -> test (Selenium),functional testing,unit testing,integral testing 
+CI - commit to repo (GIt,SVN) -> build (Jenkins) -> test (Selenium),functional testing,unit testing,integrtion testing 
 CD - release process (buid) -> UAT ->> Prod
+docker -- container solution,
+docker container -- running image of docker 

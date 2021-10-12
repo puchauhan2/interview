@@ -1,0 +1,8 @@
+1) how to roll back in package using yum -- yum history
+2) difference between ALB & classic load balancing 
+3) trouble shooting of nonfunctioning Ec2 -- see kernel dump -- start runlevel 1,check /etc/fstab cross check
+4) boot process of linux -- 
+5) Difference between Role and policies in AWS
+6) Patching -- Quarterly update security patches excludling kernel , /etc/yum.conf to write exclude package before performing take snap shot
+7) difference between role and policies
+
