@@ -1,0 +1,79 @@
+AWS Skills
+
+Pre requisites : Minimum 2 migration project,ask plan
+
+1) Block Diagram of 2 tier architecture
+2) web page is not loading behind load balancer
+3) Unable to connect server via ssh
+4) Can be same EBS volume attcahed to multiple instance
+5) Autoscaling & LB : cool down timer ,connection draining,sticky session
+6) VPC 10.11.0.0/16 subnetting into two subnet 
+7) Ec2 meta data http://169.254.169.254/latest/meta-data/
+8) NFS substitute in AWS
+9) Pre-requisites in VPC peering,cross region
+10) Just overview Blue green deployemnt
+11) RPO and RTO
+12) S3,Control tower,SNS,Lambda,Api gate way,RDS,Route 53
+13) DR : Backup and restore,Pilot light,Warm standby,Multi-site active/active
+14) Cloud front infront of ALB
+15) Multiple server connection to shared file system
+16) Need Specific log in cloudwatch (CW insight qery)
+17) Direct Connect requirement
+18) IAM role and User
+
+Extras	: Which load balance support header base routing ?
+		: trouble shooting of dead ec2 instance
+
+Linux :
+
+1) File copy methods in Linux
+2) dmseg - To find kernel messae
+3) How to find kernel version 
+4) How to find OS architecture details
+5) How to fill dummy data in minmum time
+6) Scritp : 
+
+while :
+do
+    rsync /abc/* /var/www/html/ && break
+    sleep 60
+done
+-----------
+a,b ='12'
+b,c ='34'
+
+output 134
+
+DevOps:
+
+1) terraform to manage tf state file,variable,basic command 
+2) Docker basic command 
+3) Kubernetes basic command 
+4) Pyhton : touple,for loop,f string,try exception
+
+
+
+
+
+
+
+
+
+
+
+
+
+He has just copy data experience not actual migration . 
+He has poor trouble shooting for networks connectivity in AWS and linux
+
+Candidate has very limited knowledge 
+
+ekambaram.m@trianz.com
+liyakatayub.shaikh@trianz.com
+
+
+Re-Host Each application is migrated “As-is”. Often referred to as a “Lift-and-shift” migration, this option does not require code changes
+
+Re-Plaform : Infrastructure / OS upgrades will be required on source workloads before migration
+
+RE-factro : Often referred to as "repackaging," refactoring requires minimal changes to applications so that they can be compatible to Cloud hosting
