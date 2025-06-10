@@ -1,0 +1,4 @@
+1) Quesry strig is what ever after "?"
+2) Javascript runtime : Chrome - V8 ,Firefox - Spider monkey,Edge - Chakra
+3) NodeJs is a runtime environment thet allows the execution of Javascript code server-side
+4) Build in module :  fs,path,event,http,os
